@@ -1,6 +1,5 @@
 ## It's just for development with Docker.
 
-### to install packages
 ```bash
 #!/bin/bash
 wget -qO- https://raw.githubusercontent.com/NyiNyiSoePaing/development_with_docker/refs/heads/main/install.sh | bash
