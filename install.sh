@@ -11,6 +11,7 @@ sudo apt-get install -y \
     curl \
     zip \
     unzip \
+    python3-certbot-nginx \
     software-properties-common
 
 # Add Docker’s official GPG key
