@@ -9,6 +9,8 @@ sudo apt-get install -y \
     ca-certificates \
     wget \
     curl \
+    zip \
+    unzip \
     software-properties-common
 
 # Add Docker’s official GPG key
@@ -32,8 +34,6 @@ sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-
 # Apply executable permissions to the Docker Compose binary
 sudo chmod +x /usr/local/bin/docker-compose
 
-# Add the current user to the docker group
-sudo usermod -aG docker $USER
 
 # Install AWS CLI
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
@@ -51,3 +51,6 @@ sudo apt-get install -y nginx zsh  curl
 # Start Nginx service
 sudo systemctl enable nginx
 sudo systemctl start nginx
+
+# Add the ubuntu user to the docker group
+sudo usermod -aG docker ubuntu
